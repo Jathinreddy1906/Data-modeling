@@ -45,25 +45,8 @@ Customers (1) ──── (*) Orders (*) ──── (1) Products
 5.  Calculate `order_amount = quantity * price`.
 6.  Save the cleaned and combined output.
 
-## AWS Workflow
+<img width="966" height="601" alt="image" src="https://github.com/user-attachments/assets/cd0b36bf-26eb-4ab1-8108-998bdd0045e7" />
 
-  -----------------------------------------------------------------------
-  AWS service                         Purpose
-  ----------------------------------- -----------------------------------
-  Amazon S3                           Stores original files in `raw/` and
-                                      cleaned output in `processed/`.
-
-  AWS Glue                            Reads, cleans, joins, and
-                                      transforms the CSV data.
-
-  AWS Glue Data Catalog               Stores table metadata for querying.
-
-  Amazon Athena                       Runs SQL queries on the processed
-                                      data and creates reports.
-
-  AWS IAM                             Controls access permissions for the
-                                      AWS services.
-  -----------------------------------------------------------------------
 
 ## Example Output Columns
 
